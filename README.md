@@ -1,4 +1,4 @@
-**Platform Improvement**
+**Sugar Coin Rush**
 
 Starter code for creating a platformer game using Arcade Phsyics in Phaser.
 
