@@ -108,7 +108,7 @@
         {
          "columns":16,
          "firstgid":1,
-         "image":"tilemap_packed_food.png",
+         "image":"..\/..\/Platformer 3B\/assets\/tilemap_packed_food.png",
          "imageheight":126,
          "imagewidth":288,
          "margin":0,
@@ -703,7 +703,7 @@
         {
          "columns":11,
          "firstgid":113,
-         "image":"1055.png",
+         "image":"..\/..\/Platformer 3B\/assets\/1055.png",
          "imageheight":200,
          "imagewidth":200,
          "margin":0,

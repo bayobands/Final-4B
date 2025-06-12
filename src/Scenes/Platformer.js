@@ -16,7 +16,7 @@ class Platformer extends Phaser.Scene {
     }
 
     create() {
-        const REQUIRED_COINS = 50;
+        const REQUIRED_COINS = 51; // Number of coins required to open the door
 
         // --- TILEMAP & LAYERS ---
         this.map = this.add.tilemap("platformer-level-1", 18, 18, 13000, 25);

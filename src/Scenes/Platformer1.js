@@ -56,11 +56,11 @@ class Platformer1 extends Phaser.Scene {
         // --- DOOR COLLISION HANDLING ---
         this.physics.add.overlap(my.sprite.player, this.doorGroup, () => {
             this.scene.stop("platformerScene");
-            this.scene.start("platformer1Scene");
+            this.scene.start("platformer2Scene");
         });
         this.physics.add.overlap(my.sprite.player, this.door1Group, () => {
             this.scene.stop("platformerScene");
-            this.scene.start("platformer1Scene");
+            this.scene.start("platformer2Scene");
         });
 
         // --- INPUT SETUP ---

@@ -102,7 +102,7 @@ class Load extends Phaser.Scene {
             ],
         });
 
-         this.scene.start("platformer1Scene"); // Start the platformer scene after loading
+         this.scene.start("MainScreen"); // Start the platformer scene after loading
          
          this.anims.create({
     key: 'coinAnim',
