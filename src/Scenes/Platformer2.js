@@ -114,7 +114,7 @@ class Platformer2 extends Phaser.Scene {
         // Player reaches END: go to previous scene
         this.physics.add.overlap(my.sprite.player, this.ENDGroup, (player, END) => {
             this.scene.stop("platformer2Scene");
-            this.scene.start("platformer1Scene");
+            this.scene.start("GameEndscene");
         });
     }
 
