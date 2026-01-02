@@ -11,6 +11,3 @@ https://bayobands.github.io/Final-4B/
 - Phaser 3
 - JavaScript
 - HTML/CSS
-
-
-Run, jump, and collect sugar coins across handcrafted platforming levels while avoiding enemies and hazards in this fast-paced 2D platformer.
