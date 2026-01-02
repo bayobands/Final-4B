@@ -74,17 +74,7 @@ class Platformer1 extends Phaser.Scene {
         }, this);
 
         // --- MOVEMENT VFX ---
-        my.vfx.walking = this.add.particles(0, 0, "kenny-particles", {
-            frame: [
-                'spark_01.png','spark_02.png','spark_03.png','spark_04.png',
-                'spark_05.png','spark_06.png','spark_07.png','spark_08.png','spark_09.png'
-            ],
-            random: true,
-            scale: { start: 0.05, end: 0.1 },
-            lifespan: 350,
-            alpha: { start: 1, end: 0.1 },
-        });
-        my.vfx.walking.stop();
+        // walking spark particles removed
 
         // --- CAMERA SETUP ---
         this.cameras.main.setBounds(0, 0, this.map.widthInPixels, this.map.heightInPixels);
@@ -128,9 +118,7 @@ class Platformer1 extends Phaser.Scene {
             my.sprite.player.setAccelerationX(-this.ACCELERATION);
             my.sprite.player.resetFlip();
             my.sprite.player.anims.play('walk', true);
-            my.vfx.walking.startFollow(my.sprite.player, my.sprite.player.displayWidth / 2 - 10, my.sprite.player.displayHeight / 2 - 5, false);
-            my.vfx.walking.setParticleSpeed(this.PARTICLE_VELOCITY, 0);
-            if (my.sprite.player.body.blocked.down) my.vfx.walking.start();
+            
             if (!this.runSound.isPlaying && my.sprite.player.body.blocked.down) {
                 this.runSound.play({ loop: false });
             }
@@ -138,9 +126,7 @@ class Platformer1 extends Phaser.Scene {
             my.sprite.player.setAccelerationX(this.ACCELERATION);
             my.sprite.player.setFlip(true, false);
             my.sprite.player.anims.play('walk', true);
-            my.vfx.walking.startFollow(my.sprite.player, my.sprite.player.displayWidth / 2 - 10, my.sprite.player.displayHeight / 2 - 5, false);
-            my.vfx.walking.setParticleSpeed(this.PARTICLE_VELOCITY, 0);
-            if (my.sprite.player.body.blocked.down) my.vfx.walking.start();
+            
             if (!this.runSound.isPlaying && my.sprite.player.body.blocked.down) {
                 this.runSound.play({ loop: false });
             }
@@ -149,7 +135,7 @@ class Platformer1 extends Phaser.Scene {
             my.sprite.player.setAccelerationX(0);
             my.sprite.player.setDragX(this.DRAG);
             my.sprite.player.anims.play('idle');
-            my.vfx.walking.stop();
+            
             if (this.runSound && this.runSound.isPlaying) {
                 this.runSound.stop();
             }

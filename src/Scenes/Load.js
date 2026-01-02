@@ -52,8 +52,7 @@ class Load extends Phaser.Scene {
 
         this.load.audio('coincollect', 'coin.mp3');
 
-    // Load the Kenny particles
-        this.load.multiatlas("kenny-particles", "kenny-particles.json");
+    // Kenny particles atlas not used — removed
 
     // Load the tilemap backgrounds
         this.load.image("tilemap-backgrounds", "tilemap-backgrounds.png");
