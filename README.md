@@ -1,5 +1,16 @@
-**Sugar Coin Rush**
+## Sugar Coin Rush (Platformer) 
 
-Starter code for creating a platformer game using Arcade Phsyics in Phaser.
+Run, jump, and collect sugar coins across handcrafted platforming levels while avoiding enemies and hazards in this fast-paced 2D platformer.
 
-Visual assets courtesy of [Kenny Assets](https://kenney.nl/assets), with gratitude.
+![Sugar rush](https://github.com/user-attachments/assets/feab6a58-8da0-43e2-9eb2-884da6d582db)
+
+## PLAY NOW
+https://bayobands.github.io/Final-4B/
+
+## Built With 
+- Phaser 3
+- JavaScript
+- HTML/CSS
+
+
+Run, jump, and collect sugar coins across handcrafted platforming levels while avoiding enemies and hazards in this fast-paced 2D platformer.
